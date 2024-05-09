@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bills</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+
+    <h2 class="mb-4">Manage Bills</h2>
+    <div>
+        
+        <div>
+            <a href="#" class="btn btn-outline-secondary me-2">Archive</a>
+            <a href="#" class="btn btn-primary me-2">Add New Bill</a>
+            <a href="#" class="btn btn-outline-secondary">View Archived Items</a>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="input-group">
+            <span class="input-group-text">&#128269;</span>
+            <input type="text" class="form-control" id="searchInput" placeholder="Search...">
+        </div>
+    </div>
+    
+    <div class="mb-lg-0">
+        <span>Show</span>
+        <select id="showItemsDropdown" class="form-select">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+        </select>
+        <span>items</span>
+    </div>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Mark</th>
+            <th scope="col">Account Number</th>
+            <th scope="col">Bill ID</th>
+            <th scope="col">Service</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Payment Status</th>
+            <th scope="col">Category</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>AN00100</td>
+            <td>B00001</td>
+            <td>Internet Ser</td>
+            <td>$1200</td>
+            <td>Completed</td>
+            <td>Company</td>
+            <td><a href="#">Edit/Delete</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>AN00100</td>
+            <td>B00002</td>
+            <td>Rent House</td>
+            <td>$3000</td>
+            <td>Pending</td>
+            <td>Hospital</td>
+            <td><a href="#">Edit/Delete</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>AN00100</td>
+            <td>B00003</td>
+            <td>Buy Mobile</td>
+            <td>$2400</td>
+            <td>Canceled</td>
+            <td>Personal Customer</td>
+            <td><a href="#">Edit/Delete</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>AN00101</td>
+            <td>B00004</td>
+            <td>Maintenance</td>
+            <td>$4500</td>
+            <td>Refunded</td>
+            <td>Personal Customer</td>
+            <td><a href="#">Edit/Delete</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>AN00101</td>
+            <td>B00005</td>
+            <td>Package</td>
+            <td>$300</td>
+            <td>Pending</td>
+            <td>Company</td>
+            <td><a href="#">Edit/Delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#">&laquo; Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next &raquo;</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

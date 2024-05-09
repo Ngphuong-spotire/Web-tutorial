@@ -1,0 +1,111 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.action-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-buttons input[type="text"] {
+    margin-right: 10px;
+}
+
+.action-buttons a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    color: #333;
+    border-radius: 5px;
+}
+
+.action-buttons a:hover {
+    background-color: #e6e6e6;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+#searchInput {
+    padding-right: 35px;
+}
+
+.search-icon {
+    float: left;
+    margin-right: 5px;
+}
+
+
+
+.show-items {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.show-items select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+/* Định dạng cho checkbox */
+td input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Định dạng cho checkbox khi được checked */
+td input[type="checkbox"]:checked {
+    background-color: #007bff; /* Màu nền của checkbox khi được chọn */
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    color: #333;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.pagination a:hover {
+    background-color: #e6e6e6;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination a.page-number.active,
+.pagination a.page-number:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/*-----------------------------------------------------*/
+
